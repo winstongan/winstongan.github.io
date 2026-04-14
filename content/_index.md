@@ -1,35 +1,23 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ""
 date: 2024-01-01
 type: landing
 
 design:
-  # Default section spacing
   spacing: "6rem"
 
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ""
-      # Show a call-to-action button under your biography? (optional)
       button:
         text: Download One-Pager
         url: uploads/winston-gan-projects-onepager.pdf
     design:
       css_class: dark
       background:
-        color: black
-        image:
-          # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
-          filters:
-            brightness: 1.0
-          size: cover
-          position: center
-          parallax: false
+        color: "#1a1a2e"
 
   - block: markdown
     content:
@@ -55,9 +43,7 @@ sections:
     content:
       username: me
     design:
-      # Hugo date format
       date_format: 'January 2006'
-      # Education or Experience section first?
       is_education_first: false
 
   - block: resume-skills
@@ -72,10 +58,13 @@ sections:
       title: Education
       username: me
 
-  - block: resume-interests
+  - block: markdown
     content:
       title: Interests
-      username: me
+      text: |-
+        Product Management · AI & Machine Learning · Go-to-Market Strategy · E-commerce & Platform Integrations · Growth Analytics
+    design:
+      columns: '1'
 
   - block: cta-card
     demo: true
@@ -87,7 +76,6 @@ sections:
         url: "#"
     design:
       card:
-        # Card background color (CSS class)
         css_class: "bg-primary-700"
         css_style: ""
 ---
